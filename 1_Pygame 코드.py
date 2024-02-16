@@ -12,5 +12,3 @@ while run:
             run = False
 
 pygame.quit()
-
-#기초
