@@ -1,6 +1,9 @@
-## project_4_A-red-box-descends-from-the-sky
+## project 4 주제
+- 날아오는 투사체를 피하는 '탄막 게임' 장르
+- 10분 내로 즐길 수 있는 간단한 게임을 제작한다.
 
-## 기획
+## project 사용언어 
+- python(VScode)
 
 ## 구성
 1. 게임 화면 구성
@@ -12,6 +15,11 @@
 2. 속도
 3. 갯수
 4. 랜덤
+
 ## 음악
+무료 비트 제작 어플리케이션(Drum Pad Machine ver2.24.1)
 
 ## 개선할 점
+
+## 시각화
+- PPT
