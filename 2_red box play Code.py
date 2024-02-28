@@ -169,7 +169,7 @@ game_started = False
 # 시작 화면 함수
 def show_start_screen():
     win.fill(black)
-    title = font.render("A red box descends from the sky", True, white)
+    title = font.render("Dodge a Red Box", True, white)
     start_message = font.render("Start : Spacebar", True, white)
 
     # 타이틀과 시작 메시지의 중앙 정렬
