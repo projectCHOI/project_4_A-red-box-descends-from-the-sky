@@ -4,9 +4,9 @@ import time
 
 # 게임 초기화 및 설정
 pygame.init()
-width, height = 1000, 500
+width, height = 1000, 600
 win = pygame.display.set_mode((width, height))
-pygame.display.set_caption("Dodge the Falling Objects")
+pygame.display.set_caption("Dodge a Red Box")
 
 # 색상 설정
 black = (0, 0, 0)
