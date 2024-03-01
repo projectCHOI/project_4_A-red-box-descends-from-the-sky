@@ -1,0 +1,8 @@
+
+win : 게임 화면 창의 속성 
+pygame.display.set_mode((500, 500)) : set_mode는 창의 크기
+pygame.display.set_caption("First Game") : set_caption는 창의 이름
+
+run = True : 게임의 루프
+
+for event in pygame.event.get() : 게임 안에서의 행동을 추가
