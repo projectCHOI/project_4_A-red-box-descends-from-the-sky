@@ -21,14 +21,20 @@ font = pygame.font.SysFont("comicsans", 40)
 
 # 플레이어 설정
 player_size = 50
+player_pos = [width / 2, height - 2 * player_size]
 player_speed = 40
+
+# 이미지 로드 및 크기 조정
+images = []
+for image_name in ['A.png', 'B.png', 'C.png', 'D.png']:
+    img = pygame.image.load(image_name)
+    img = pygame.transform.scale(img, (50, 50))  # 이미지 크기를 50x50으로 조정
+    images.append(img)
 
 # 떨어지는 물체 설정
 enemy_size = 50
 enemy_speed = 40
-#
-# pygame.mixer 모듈 초기화
-pygame.mixer.init()
+enemies = []
 
 # 음악 파일 로드
 pygame.mixer.music.load('C:\\Users\\HOME\\Desktop\\새싹_교육\\GitHub_CHOI\\project_4_A-red-box-descends-from-the-sky\\240211_red box_music.wav')
@@ -148,9 +154,6 @@ def add_enemy():
         new_enemy = {'pos': [width - enemy_size, random.randint(0, height - enemy_size)], 'direction': [-enemy_speed, 0], 'size': enemy_size}
     enemies.append(new_enemy)
 
-# 시계 설정
-clock = pygame.time.Clock()
-
 # 플레이어 설정
 player_size = 30
 player_pos = [width / 2, height - 2 * player_size]
@@ -181,7 +184,6 @@ def show_start_screen():
     win.blit(title, title_rect)
     win.blit(start_message, start_message_rect)
     pygame.display.update()
-
 # 게임 종료 화면 함수
 def show_game_over_screen():
     win.fill(black)
