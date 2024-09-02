@@ -61,4 +61,3 @@
 
 ## 시각화
 - PPT : 프로젝트의 진행과 결과를 발표하기 위한 시각 자료로 PPT를 사용
-- Git connection verification
