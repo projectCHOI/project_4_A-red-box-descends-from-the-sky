@@ -1,6 +1,7 @@
 import pygame
 import random
 import time
+import os
 
 # 초기 설정
 pygame.init()
@@ -24,7 +25,10 @@ player_pos = [width / 2, height - 2 * player_size]
 player_speed = 10
 
 # 음악 설정
-pygame.mixer.music.load('C:\\Users\\HOME\\Desktop\\새싹_교육\\GitHub_CHOI\\project_4_A-red-box-descends-from-the-sky\\240211_red box_music.wav')
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+MUSIC_PATH = os.path.join(BASE_DIR, "240211_red box_music.wav")
+
+pygame.mixer.music.load(MUSIC_PATH)
 pygame.mixer.music.set_volume(1.0)
 
 # 시계
