@@ -72,13 +72,13 @@ def initialize_game():
     player_pos = [width / 2, height - 2 * player_size]
     reset_enemies()
     score = 0
-    start_time = time.time()
     game_started = False
     game_over = False
+    pygame.mixer.music.stop()
 
 # 시작 화면
 def show_start_screen():
-    if not pygame.mixer.music.get_busy():
+    if not pygame.mixer.music.get_busy() and not game_over:
         pygame.mixer.music.play(-1)
 
     win.fill(black)
